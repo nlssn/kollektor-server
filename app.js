@@ -144,7 +144,7 @@ app.put('/api/records/:id', upload.single('image'), (req, res) => {
 });
 
 /* Start the server on the specified port */
-const port = 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
    console.log(`Server är startad på port ${port}`);
 });
