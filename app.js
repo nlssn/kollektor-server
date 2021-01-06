@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage: storage, fileFilter: fileFilter});
 
 /* Connect to database */
-moongoose.connect('mongodb+srv://tempUser:1234@cluster0.jntci.mongodb.net/records_db?retryWrites=true&w=majority', {
+moongoose.connect('mongodb+srv://username:password@cluster0.jntci.mongodb.net/records_db?retryWrites=true&w=majority', {
    useNewUrlParser: true, 
    useUnifiedTopology: true,
    useFindAndModify: false
